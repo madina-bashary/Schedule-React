@@ -1,0 +1,193 @@
+/* My Font Face  */
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/poppins-v5-latin-300.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+}
+
+/* My Navbar Style  */
+.nav {
+  padding: 20px 120px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  /* background-color: rgb(214, 65, 65); */
+  background-color: #a626d3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+/* Cards Style  */
+.card {
+  margin: 70px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.card--img {
+  width: 160px;
+  height: 240px;
+  margin-right: 60px;
+}
+.card--img img {
+  width: 180px;
+  height: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.location {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  display: inline-block;
+  line-height: 18px;
+  margin-right: 20px;
+}
+.map--link {
+  display: inline-block;
+  text-decoration: underline;
+  line-height: 18px;
+  color: grey;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card h1 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Meme Generator Project Styles Begins  */
+.meme--container {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  height: 65px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.meme--container img {
+  height: 100%;
+  margin-right: 6px;
+}
+.meme--container h2 {
+  font-size: 20px;
+  margin-right: auto;
+}
+.meme--container h4 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.meme {
+  padding: 36px;
+}
+.meme .form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+.form--button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.form--input {
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  outline: none;
+  text-indent: 7px;
+}
+.meme--image {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+/* Yes or No Changing */
+.yes--no {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #672280;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.star--icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Schedule Card style / */
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  justify-content: space-evenly;
+}
+.schedule--card {
+  width: 45%;
+  margin: 30px auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #a626d3;
+  border-radius: 20px;
+  justify-content: center;
+}
+.tasks {
+  width: 35%;
+  margin: 10px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a626d3;
+  border-radius: 20px;
+}
+
+/* Boxes Style */
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #a626d3;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .schedule--card {
+    flex-direction: column;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .schedule {
+    padding: 40px 10px;
+  }
+  .tasks {
+    width: 100%;
+    padding: 10px 20px;
+    /* flex-direction: column; */
+  }
+}
